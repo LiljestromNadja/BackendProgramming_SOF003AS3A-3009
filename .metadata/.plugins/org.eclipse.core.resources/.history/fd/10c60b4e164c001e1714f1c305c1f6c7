@@ -1,0 +1,5 @@
+package hhBackEnd.week2.domain;
+
+public class Student {
+
+}
