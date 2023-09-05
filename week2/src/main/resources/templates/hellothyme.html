@@ -22,15 +22,22 @@
 		
 		<div th:if="${ika} &gt; 18">
 			<p th:text="'Welcome ' + ${nimi} + '!'" /> 
+			
+			</br>
+			<a href="http://localhost:8080/index">Back to index.html</a> </br>
 		</div>
 		
 		<div th:if="${ika} &lt; 17">
 			<p th:text="'You are too young ' + ${nimi} + '!'" />
+			<p th:text="'Poor '+ ${nimi} + ', '"/> <a href="http://localhost:8080/index" > Go back to index.html...</a> </br>
+			
+			</br>
+			
+			
 		</div>		
 		
 	</div>
 	
-	</br>
-	<a href="http://localhost:8080/index">Back to index.html</a> </br>
+	
 </body>
 </html>
