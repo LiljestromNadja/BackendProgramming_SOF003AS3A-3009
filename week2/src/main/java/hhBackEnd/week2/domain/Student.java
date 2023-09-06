@@ -3,37 +3,40 @@ package hhBackEnd.week2.domain;
 //teht 2
 public class Student {
 	
-	private String nimi, osoite;
-	
-	
+	private String firstName, lastName;
 
-	public Student(String nimi, String osoite) {
+	public Student(String firstName, String lastName) {
 		super();
-		this.nimi = nimi;
-		this.osoite = osoite;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 
-	public String getNimi() {
-		return nimi;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setNimi(String nimi) {
-		this.nimi = nimi;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	public String getOsoite() {
-		return osoite;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setOsoite(String osoite) {
-		this.osoite = osoite;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [nimi=" + nimi + ", osoite=" + osoite + "]";
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + "]";
 	}
 	
+	
+	
+	
+
+
 	
 
 }

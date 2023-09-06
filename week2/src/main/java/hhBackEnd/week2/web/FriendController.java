@@ -14,6 +14,8 @@ public class FriendController {
 	//http://localhost:8080/friend
 	private ArrayList<String> friends = new ArrayList<>();
 	
+	//voi toteuttaa myös 
+	//@RequestMapping(value="/friend", method=RequestMethod.GET)
 	@GetMapping("/friend")
 	public String handleFriends(@RequestParam(name="nimi", required = false) String name, Model model) {
 		if (name != null) {

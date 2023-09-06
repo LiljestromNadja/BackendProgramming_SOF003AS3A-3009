@@ -13,8 +13,8 @@
 			<th>Last name</th>
 		</tr>                                              -->
 		<tr th:each="student : ${students}">
-			<td th:text="${student.nimi}"></td>
-			<td th:text="${student.osoite}"></td>
+			<td th:text="${student.firstName}"></td>
+			<td th:text="${student.lastName}"></td>
 		</tr>
 	
 	</table>
