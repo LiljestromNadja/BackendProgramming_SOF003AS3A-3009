@@ -19,10 +19,13 @@ public class StudentController {
 		ArrayList<Student> students = new ArrayList<>();
 		
 		students.add(new Student("Kate", "Cole"));
+		System.out.println(students);
 		students.add(new Student("Dan", "Brown"));
 		students.add(new Student("Mike", "Mars"));
 		
-		model.addAttribute("students", students);
+		model.addAttribute("students", students); //lainausmerkeissä olevan pitää olla sama kuin .html:ssä
+		
+		System.out.println(students);
 		return "studentlistview";
 	}
 
