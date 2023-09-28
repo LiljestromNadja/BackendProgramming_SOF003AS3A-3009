@@ -1,0 +1,79 @@
+package hh.bookstore03.web;
+
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import hh.bookstore03.domain.Book;
+import hh.bookstore03.domain.BookRepository;
+
+@RestController //palauttaa JSONia
+public class RestBookController {
+	
+	private static final Logger log = LoggerFactory.getLogger(RestBookController.class);
+	
+	//injektoidaan Bookrepository RestBookController-luokalle
+	@Autowired
+	BookRepository bookRepository;
+	
+	//palautetaan lista kirjoista http://localhost:8080/booksjson
+	@GetMapping("/booksjson")
+	public Iterable<Book> getBooks() {
+		log.info("nouda ja palauta lista kirjoista");
+		return bookRepository.findAll();
+	}
+	
+	
+	//etsitään ja palautetaan yksi kirja http://localhost:8080/booksjson/1
+	@GetMapping("/booksjson/{id}")
+	Optional<Book> getBook(@PathVariable Long id) {
+		log.info("Etsitään kirja, id: " + id);
+		return bookRepository.findById(id);
+		
+	}
+	
+	//lisätään uusi kirja 
+	@PostMapping("/booksjson") //http://localhost:8080/booksjson
+	Book newBook(@RequestBody Book newBook) {
+		log.info("Lisätäään kirja: " + newBook);
+		System.out.println("LOG : Lisätään kirja" + newBook);
+		return bookRepository.save(newBook);
+	}
+	
+	// muokataan olemassa olevaa kirjaa http://localhost:8080/booksjson/1
+		@PutMapping("/booksjson/{id}")
+		Book editBook(@RequestBody Book editedBook, @PathVariable Long id) {
+			log.info("Muokataan kirjaa " + editedBook);
+			editedBook.setId(id);
+			return bookRepository.save(editedBook);
+		}
+	
+	/*//delete book
+	@DeleteMapping("/booksjson/{id}")
+	void deleteBook(@PathVariable Long id) {
+		bookRepository.deleteById(id);
+	}*/
+	
+	//poistetaan kirja http://localhost:8080/booksjson/1
+	@DeleteMapping("/booksjson/{id}")
+	public Iterable<Book> deleteBook(@PathVariable Long id) {
+		log.info("Poistetaan kirja, id: " + id);
+		bookRepository.deleteById(id);
+		return bookRepository.findAll(); //näytetään jäljelle jääneet
+	}
+	
+
+	
+
+
+}
+
