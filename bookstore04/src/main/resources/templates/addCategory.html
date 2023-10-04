@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>add new Category</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h3>New Category</h3>
+	<div>
+	<form action="#" th:object="${category}" th:action="@{saveCategory}" method="post">
+		<table>
+			<tr>
+				<td>Category name: <input type="text" th:field="*{name}" /></td>
+				<td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Error</td>				
+			</tr>
+		</table>
+		
+		  	<!-- 
+		  	<div>
+		  	<label>First name</label>
+			<input type="text" th:field="*{firstName}" />
+			</div>
+			<div>
+		  	<label>Last name</label>
+		  	<input type="text" th:field="*{lastName}" />
+			</div>
+			<div>
+		  	<label>City</label>
+			<input type="text" th:field="*{city}" />
+			</div>
+			<div>
+		  	<label>Social security number</label>
+			<input type="text" th:field="*{ssn}" />
+			</div>
+			<div>		
+		  	<label>Year Of birth</label>
+			<input type="number" min="1800" th:field="*{yob}" /> 
+			<input type="number" th:field="*{yob}" />
+			<div th:if="${#fields.hasErrors('yob')}" th:errors="*{yob}">Error</div>			
+			</div>-->
+			<input type="submit" value="Save"></input>
+		</form>
+		<br></br>
+		<a href="/categories"><button>All Categories</button></a>
+	<br></br>
+     <a href="/booklist"><button>Back to Booklist</button></a>
+	</div>
+
+ 	
+</body>
+</html>
