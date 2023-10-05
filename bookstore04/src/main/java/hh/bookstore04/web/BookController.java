@@ -1,67 +1,55 @@
 package hh.bookstore04.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import hh.bookstore04.domain.Book;
 import hh.bookstore04.domain.BookRepository;
 import hh.bookstore04.domain.CategoryRepository;
-
-import org.springframework.validation.BindingResult;
 import jakarta.validation.Valid;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.ui.Model;
-
 @Controller
-public class BookController {	
-	
-	private static final Logger log = LoggerFactory.getLogger(BookController.class);
+public class BookController {
 	
 	@Autowired
-	BookRepository brepository;
+	private BookRepository repository;
 	
 	@Autowired
 	private CategoryRepository crepository;
 	
-	@RequestMapping("/index") //http://localhost:8080/index
+	//Main/index
+	@RequestMapping(value= {"/", "/main" , "/index"}) //Eendpoint: http://localhost:8080 , http://localhost:8080/index ,http://localhost:8080/main
 	public String showMainPage() {
-		return "index.html";  //index.html
-	}
-		
-	@RequestMapping("/joku") //http://localhost:8080/joku
-	public String showJokuPage() {
-		return "joku.html";  //joku.html
+		return "index";  //index.html
 	}
 	
-	//listaus 
-	//@GetMapping(value = {"/","/booklist"}) //endpoint: http://localhost:8080/ ja  http://localhost:8080/booklist
-	@GetMapping("/booklist") //http://localhost:8080/booklist
+	//Kaikki kirjat	
+	@RequestMapping(value = {"/booklist"}) //endpoint:  http://localhost:8080/booklist
 	public String bookList(Model model) {
 		
-		model.addAttribute("books", brepository.findAll());
-		log.info("Kirjojen listaus");
+		model.addAttribute("books", repository.findAll());
 		
 		return "booklist.html";	
 	}
 	
-	//lisääminen
+
+	//Lisätään kirja
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus lisätä
 	@RequestMapping(value="/add")
 	public String addBook(Model model) {
 		model.addAttribute("book", new Book());
 		model.addAttribute("categories", crepository.findAll());
-		log.info("Kirjan lisääminen");
 		return "addbook";
-		
 	}
 	
 	//Tallennetaan uusi kirja
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus 
 	@RequestMapping(value="/save", method = RequestMethod.POST) //tämä käytössä addbook.html :ssä
 	public String save(@Valid Book book, BindingResult bindingResult, Model model) {
 		if (bindingResult.hasErrors()) {
@@ -70,33 +58,33 @@ public class BookController {
 			model.addAttribute("categories", crepository.findAll()); // <---- tämän takia edellinen kaatui, tärkeä
 			return "addbook";
 		}
-		brepository.save(book);
-		log.info("Kirja lisätty");
+		repository.save(book);
+		System.out.println("LISÄTTY: " + book + book.getCategory());
 		return "redirect:/booklist";
 	}
 
-	
-	//poistaminen
+	//Poista kirja
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus poistaa 
 	@RequestMapping(value="/delete/{id}", method=RequestMethod.GET)
 	public String deleteBook(@PathVariable("id") Long bookId, Model model) {
-		brepository.deleteById(bookId);
-		return "redirect:../booklist";
+		repository.deleteById(bookId);
+		System.out.println("POISTETAAN KIRJA, id: " + bookId);
+		return "redirect:../booklist"; 
 	}
 	
-	
-	//muokkaaminen
-	@GetMapping("editBook/{id}")
+
+	//Muokkaa
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus, onko oikeus muokata
+	@RequestMapping(value= "/editBook/{id}", method = RequestMethod.GET)
 	public String editBook(@PathVariable("id") Long id, Model model) {
-		model.addAttribute("editBook", brepository.findById(id));
+		model.addAttribute("book", repository.findById(id)); //bookID
 		model.addAttribute("categories", crepository.findAll());
-		log.info("Kirjan muokkaus");
 		return "editBook";
 	}
-
+/*
 	@PostMapping("saveBook") //tämä käytössä editbook.html:ssä
 	public String saveBook(Book book) {
-		brepository.save(book);		
-		log.info("Kirjaa muokattu");
+		repository.save(book);
 		return "redirect:/booklist";
-	}
+	}*/
 }

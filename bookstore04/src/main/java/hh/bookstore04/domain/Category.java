@@ -17,15 +17,15 @@ public class Category {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long categoryid;
+	private Long categoryid;
 	
 	@Size(min = 1, max = 30)
 	private String name;
-
+	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "category") //mappedByn pitää olla sama kuin Book.javassa private Category category;
 	@JsonIgnore
 	private List<Book> books;
-	
+
 	public Category() {}
 	
 	public Category(String name) {  //HUOM, tarkkana constructoreiden kanssa!
@@ -62,4 +62,15 @@ public class Category {
 	public String toString() {
 		return "Category [categoryid=" + categoryid + ", name=" + name + ", books=" + books + "]";
 	}
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+
 }

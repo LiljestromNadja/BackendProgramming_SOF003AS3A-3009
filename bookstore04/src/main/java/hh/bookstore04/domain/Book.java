@@ -6,27 +6,34 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.NotEmpty;
+//import jakarta.validation.constraints.Size;
 
 @Entity
 public class Book {
-	
 	@Id
-	//@GeneratedValue(strategy=GenerationType.AUTO)
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	@Size(min = 1, max = 40)
-	private String title, author, isbn;
+	@NotEmpty(message = "Please give a title to a book")
+	//@Size(min = 1, max = 300)
+	private String title;
+	
+	@NotEmpty(message = "Please give an author to a book")
+	//@Size(min = 1, max = 100)
+	private String author;
+	
+	private String isbn;
 	private int publicationYear;
 	private double price;
 	
-	@ManyToOne
+    @ManyToOne
     @JoinColumn(name = "categoryid")
     private Category category;	 //<-----------Tämän pitää olla sama kuin Category.javassa mappedBy = "category"
 	
-	public Book() {}
+	public Book() {} // HUOM, tarkkana constructoreiden kanssa!
 	
+
 	public Book(String title, String author, String isbn, int publicationYear, double price) {
 		super();
 		this.title = title;
@@ -35,9 +42,9 @@ public class Book {
 		this.publicationYear = publicationYear;
 		this.price = price;
 	}
+	
 	public Book(String title, String author, String isbn, int publicationYear, double price, Category category) {
 		super();
-		//this.id = id;
 		this.title = title;
 		this.author = author;
 		this.isbn = isbn;
@@ -45,8 +52,8 @@ public class Book {
 		this.price = price;
 		this.category = category;
 	}
-	
-	
+
+
 	public Category getCategory() {
 		return category;
 	}
@@ -90,19 +97,32 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	/*
-	@Override
-	public String toString() {
-		return "Book [title=" + title + ", author=" + author + ", isbn=" + isbn + ", publicationYear=" + publicationYear
-				+ ", price=" + price + "]";
-	}
-	*/
 	@Override
 	public String toString() {
 		return "Book [id=" + id + ", title=" + title + ", author=" + author + ", isbn=" + isbn + ", publicationYear="
 				+ publicationYear + ", price=" + price + "]";
 	}
 	
+	
+	//kysy opettajalta miksi näin ei toimi
+	/*@Override
+	public String toString() {
+		return "Book [id=" + id + ", title=" + title + ", author=" + author + ", isbn=" + isbn + ", publicationYear="
+				+ publicationYear + ", price=" + price + ", category=" + category + "]";
+	}
+	
+	Konsolissa: 
+	
+	2023-02-13T23:32:08.813+02:00  INFO 17588 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-13T23:32:08.814+02:00  INFO 17588 --- [  restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Hibernate: drop table if exists book cascade 
+Hibernate: drop table if exists category cascade 
+Hibernate: drop sequence if exists book_seq
+Hibernate: drop sequence if exists category_seq
+2023-02-13T23:32:09.028+02:00  WARN 17588 --- [  restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-13T23:32:09.029+02:00  INFO 17588 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-02-13T23:32:09.033+02:00  INFO 17588 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed
+		*/
 	
 	
 	

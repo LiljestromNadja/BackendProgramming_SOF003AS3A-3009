@@ -32,24 +32,14 @@ public class RestBookController {
 		return bookRepository.findAll();
 	}
 	
-	
-	//etsitään ja palautetaan yksi kirja http://localhost:8080/booksjson/1
-	@GetMapping("/booksjson/{id}")
-	Optional<Book> getBook(@PathVariable Long id) {
-		log.info("Etsitään kirja, id: " + id);
-		return bookRepository.findById(id);
-		
-	}
-	
 	//lisätään uusi kirja 
-	@PostMapping("/booksjson") //http://localhost:8080/booksjson
+	@PostMapping("booksjson")
 	Book newBook(@RequestBody Book newBook) {
-		log.info("Lisätäään kirja: " + newBook);
-		System.out.println("LOG : Lisätään kirja" + newBook);
+		log.info("Lisätäään kirja " + newBook);
 		return bookRepository.save(newBook);
 	}
 	
-	// muokataan olemassa olevaa kirjaa http://localhost:8080/booksjson/1
+	// muokataan olemassa olevaa kirjaa
 		@PutMapping("/booksjson/{id}")
 		Book editBook(@RequestBody Book editedBook, @PathVariable Long id) {
 			log.info("Muokataan kirjaa " + editedBook);
@@ -63,17 +53,22 @@ public class RestBookController {
 		bookRepository.deleteById(id);
 	}*/
 	
-	//poistetaan kirja http://localhost:8080/booksjson/1
+	//poistetaan kirja
 	@DeleteMapping("/booksjson/{id}")
 	public Iterable<Book> deleteBook(@PathVariable Long id) {
 		log.info("Poistetaan kirja, id: " + id);
 		bookRepository.deleteById(id);
-		return bookRepository.findAll(); //näytetään jäljelle jääneet
+		return bookRepository.findAll();
 	}
 	
-
+	//etsitään ja palautetaan yksi kirja
+	@GetMapping("/booksjson/{id}")
+	Optional<Book> getBook(@PathVariable Long id) {
+		log.info("Etsitään kirja, id: " + id);
+		return bookRepository.findById(id);
+		
+	}
 	
 
 
 }
-

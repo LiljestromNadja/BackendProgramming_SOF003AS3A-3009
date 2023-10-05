@@ -1,6 +1,5 @@
 package hh.bookstore04.web;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,24 +11,25 @@ import hh.bookstore04.domain.Category;
 import hh.bookstore04.domain.CategoryRepository;
 import jakarta.validation.Valid;
 
-@Controller
+@Controller //palauttaa HTML-sivun
 public class CategoryController {
-	
+
+
 	@Autowired
 	CategoryRepository crepository;
-	
+
 	@GetMapping("/categories")
 	public String getCategories(Model model) {
 		model.addAttribute("categories", crepository.findAll());
 		return "categories";
 	}
-	
+
 	@GetMapping("/addCategory")
 	public String addCategory(Model model) {
 		model.addAttribute("category", new Category());
 		return "addCategory";
 	}
-	
+
 	@PostMapping("/saveCategory")
 	public String saveCategory(@Valid Category category, BindingResult bindingResult, Model model) {
 		if (bindingResult.hasErrors()) {
@@ -40,7 +40,6 @@ public class CategoryController {
 		return "redirect:categories";
 
 	}
-	
-	
 
 }
+
