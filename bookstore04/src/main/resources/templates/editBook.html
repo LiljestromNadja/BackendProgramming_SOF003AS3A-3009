@@ -22,9 +22,9 @@
 	<h3>Edit Book</h3>
 	</br>
 	<div>
-	<form th:object="${book}" th:action="@{../save}" action="#" method="post"> 	 					<!-- Tässä menee @{/save} -->
+	<form th:object="${book}" th:action="@{../save}" action="#" method="post"> <!-- Tässä menee @{/save} -->
 	
-		  	<input type="hidden" id="id" th:field="*{id}" />												<!-- muokatessa id:n täytyy mennä mukana backendin puolelle, ettei luoda uutta bookia -->
+		  	<input type="hidden" id="id" th:field="*{id}" /><!-- muokatessa id:n täytyy mennä mukana backendin puolelle, ettei luoda uutta bookia -->
 		  	<div>
 		  	<label>Title</label>
 			<input type="text" th:field="*{title}" />

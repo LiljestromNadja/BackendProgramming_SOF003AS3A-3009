@@ -80,7 +80,14 @@ public class UserRegistrationController {
 		model.addAttribute("users", regUserRepository.findAll());		
 		return "userlist";	
 	}
-	
+	//Muokkaa käyttäjää
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus, onko oikeus muokata
+	@RequestMapping(value= "admin/editUser/{id}", method = RequestMethod.GET)
+	public String editUser(@PathVariable("id") Long id, Model model) {
+		model.addAttribute("appuser", regUserRepository.findById(id)); //user id
+		//model.addAttribute("roles", uRoleRepository.findAll());
+		return "editUser";
+	}
 	//Poista käyttäjä
 	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus poistaa 
 	@RequestMapping(value="/admin/deleteuser/{id}", method=RequestMethod.GET)

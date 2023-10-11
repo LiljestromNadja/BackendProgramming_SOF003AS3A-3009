@@ -25,11 +25,13 @@
 		<tr>
 			<th >Username</th>
 			<th>User role</th>
+			<th>Edit</th>
 			<th>Danger Zone</th>
 		</tr>
 		<tr th:each="user : ${users}"><!-- MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
 			<td th:text="${user.username}"></td>
 			<td th:text="${user.role}"></td>
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/admin/editUser/{id}(id=${user.id})}" class="btn btn-xs btn-success btn-sm">Edit</a></td>
 			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/admin/deleteuser/{id}(id=${user.id})}" class="btn btn-xs btn-danger btn-sm">Delete</a></td>
 		</tr>
 	</table>

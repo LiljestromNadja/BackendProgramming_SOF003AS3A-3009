@@ -29,6 +29,7 @@ public class UserDetailServiceImpl implements UserDetailsService  {
     	ApplicationUser curruser = repository.findByUsername(username);
         UserDetails user = new org.springframework.security.core.userdetails.User(username, curruser.getPasswordHash(), 
         		AuthorityUtils.createAuthorityList(curruser.getRole()));
+        System.out.println("LOG UserDetailService, KIRJAUTUNUT KÄYTTÄJÄROOLI: " + curruser.getRole());
         return user;
     }   
 } 

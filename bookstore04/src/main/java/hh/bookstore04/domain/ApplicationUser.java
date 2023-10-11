@@ -30,6 +30,15 @@ public class ApplicationUser {
     @Column(name = "role", nullable = false)
     private String role;
     
+    //ExampleGet your own Java Server
+    /*enum Role {
+    	  ADMIN,
+    	  USER,
+    	  VISITOR
+    	}*/
+    
+    
+    
     //Constructors  
 	public ApplicationUser() {
 		super();
