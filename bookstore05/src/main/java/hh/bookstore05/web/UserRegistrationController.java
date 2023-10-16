@@ -1,0 +1,101 @@
+package hh.bookstore05.web;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import hh.bookstore05.domain.ApplicationUser;
+import hh.bookstore05.domain.ApplicationUserRepository;
+import hh.bookstore05.domain.UserRegistration;
+import jakarta.validation.Valid;
+
+@Controller
+public class UserRegistrationController {
+	
+	private static final Logger log = LoggerFactory.getLogger(UserRegistrationController.class);
+
+	@Autowired
+	ApplicationUserRepository regUserRepository; 
+	
+	@GetMapping("/admin/register")
+	public String addNewApplicationUser(Model model) {
+		log.info("new user template " + new UserRegistration());
+		model.addAttribute("newuser", new UserRegistration());
+		return "registration";
+
+	}
+	
+	//tallenna käyttäjä
+	@PostMapping("/admin/saveuser")
+	public String saveUser(@Valid @ModelAttribute("newuser") UserRegistration newUser, BindingResult bindingResult) {
+
+		log.info("saveuser: newUser is " + newUser.toString());
+		if (!bindingResult.hasErrors()) { // validation errors
+			if (newUser.getPassword().equals(newUser.getPasswordCheck())) { // tarkistetaan täsmäävätkö salasanat
+				String pwd = newUser.getPassword();
+				BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
+				String hashPwd = bc.encode(pwd);
+
+				ApplicationUser newAppUser = new ApplicationUser();
+				newAppUser.setPasswordHash(hashPwd);
+				newAppUser.setUsername(newUser.getUsername());
+				newAppUser.setRole(newUser.getRole());
+				//newAppUser.setRole("USER"); //Asetetaan user role USERiksi MUISTA vaihtaa myös UserRegistration.java
+				if (regUserRepository.findByUsername(newUser.getUsername()) == null) { // onko käyttäjänimi jo käytössä
+					System.out.println("LISÄTTY KÄYTTÄJÄ: " + newAppUser);
+					regUserRepository.save(newAppUser);
+				} else {
+					log.info("username already exists");
+					bindingResult.rejectValue("username", "err.username", "Username already exists");
+					return "registration";
+				}
+			} else {
+				log.info("Password doesn't match");
+				bindingResult.rejectValue("passwordCheck", "err.passCheck", "Passwords does not match");
+				return "registration";
+			}
+		} else {
+			return "registration";
+		}		
+		//return "redirect:/login"; //jos onnistuu, kirjaa ÄRSYTTÄVÄSTI ULOS
+		return "redirect:../admin/userlist"; 
+	}
+	
+	
+	//Listaa kaikki käyttäjät	
+	@PreAuthorize("hasAuthority('ADMIN')")
+	@RequestMapping(value = {"/admin/userlist"}) //endpoint: http://localhost:8080/ ja  http://localhost:8080/booklist
+	public String userlist(Model model) {		
+		model.addAttribute("users", regUserRepository.findAll());		
+		return "userlist";	
+	}
+	//Muokkaa käyttäjää
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus, onko oikeus muokata
+	@RequestMapping(value= "admin/editUser/{id}", method = RequestMethod.GET)
+	public String editUser(@PathVariable("id") Long id, Model model) {
+		model.addAttribute("appuser", regUserRepository.findById(id)); //user id
+		//model.addAttribute("roles", uRoleRepository.findAll());
+		return "editUser";
+	}
+	//Poista käyttäjä
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus poistaa 
+	@RequestMapping(value="/admin/deleteuser/{id}", method=RequestMethod.GET)
+	public String deleteUser(@PathVariable("id") Long id, Model model) {
+		regUserRepository.deleteById(id);
+		System.out.println("POISTETTU KÄYTTÄJÄ, id: " + id);
+		return "redirect:../userlist";
+	}
+	
+
+}
