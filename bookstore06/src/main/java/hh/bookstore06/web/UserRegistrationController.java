@@ -93,6 +93,8 @@ public class UserRegistrationController {
 		//model.addAttribute("roles", uRoleRepository.findAll());
 		return "editUser";
 	}
+		
+		
 	//Poista käyttäjä
 	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus poistaa 
 	@RequestMapping(value="/admin/deleteuser/{id}", method=RequestMethod.GET)

@@ -28,11 +28,17 @@
 	<h3>All Categories</h3>
 	<table>
 		<tr>
-			<th>Category name</th>
+			<th>Category name</th> <!-- th == tableHeader -->
+			<th></th>
+			<th></th>
 			</br>
 		</tr>
 		<tr th:each="category : ${categories}">
 			<td th:text="${category.name}"></td>
+
+			
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/editCategory/{id}(id=${category.categoryid})}" class="btn btn-xs btn-success btn-sm">Edit</a></td>
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/deleteCategory/{id}(id=${category.categoryid})}" class="btn btn-xs btn-danger btn-sm">Delete</a></td>    
 		</tr>
 	</table>
 	<br></br>

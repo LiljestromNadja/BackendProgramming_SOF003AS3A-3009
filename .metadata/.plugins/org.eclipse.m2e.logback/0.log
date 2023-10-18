@@ -3858,3 +3858,189 @@ org.eclipse.core.runtime.CoreException: Launch configuration Bookstore06_MariaDb
 2023-10-17 20:56:39,329 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
 2023-10-17 20:56:57,075 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-10-17 20:56:57,076 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 20:56:57,078 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-17 21:01:00,398 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-17 21:01:00,399 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 21:01:00,402 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-17 21:02:28,662 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-17 21:02:28,663 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 21:02:28,667 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-17 21:02:44,146 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-17 21:02:44,146 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 21:02:44,149 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-17 21:03:15,810 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-17 21:03:15,810 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 21:03:15,814 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-17 21:03:40,514 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-17 21:03:40,514 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 21:03:40,517 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-17 21:05:01,796 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-17 21:05:01,796 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-17 21:05:01,799 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:49:45,298 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:49:45,298 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:49:45,301 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:52:35,694 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:52:35,695 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:52:35,698 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:57:25,156 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:57:25,157 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:57:25,160 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:57:39,333 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:57:39,333 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:57:39,337 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:58:01,617 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:58:01,649 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 14:58:01,659 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:58:08,390 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:58:08,395 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 14:58:08,404 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:58:32,787 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:58:32,787 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:58:32,790 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:58:46,711 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:58:46,711 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:58:46,714 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:59:45,277 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:59:45,277 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:59:45,281 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 14:59:58,876 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 14:59:58,877 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 14:59:58,880 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:00:34,717 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:00:34,748 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 15:00:34,759 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:01:57,597 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:01:57,602 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 15:01:57,611 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:04:05,453 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:04:05,458 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 15:04:05,468 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:18:31,398 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:18:31,408 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 15:18:31,417 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:18:50,594 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:18:50,600 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 15:18:50,609 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:22:37,936 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:22:37,941 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-10-18 15:22:37,951 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:23:35,155 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:23:35,155 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:23:35,158 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:28:23,978 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:28:23,979 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:28:23,982 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:30:12,731 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:30:12,731 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:30:12,734 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:30:52,509 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:30:52,509 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:30:52,512 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:33:12,900 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:33:12,900 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:33:12,903 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:34:50,318 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:34:50,319 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:34:50,322 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:35:14,789 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:35:14,789 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:35:14,792 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:36:10,313 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:36:10,314 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:36:10,317 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:36:38,586 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:36:38,586 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:36:38,589 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:36:57,989 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:36:57,989 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:36:57,993 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:38:59,208 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:38:59,209 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:38:59,211 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:42:48,839 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:42:48,845 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 15:42:48,855 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:45:20,016 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:45:20,021 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 15:45:20,031 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:47:18,733 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:47:18,738 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 15:47:18,748 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:47:58,461 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:47:58,467 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 15:47:58,477 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:50:43,247 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:50:43,247 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:50:43,251 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:51:55,499 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 15:51:55,499 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:51:55,503 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:53:51,009 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:53:51,020 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 15:53:51,030 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 15:55:00,231 [Worker-80: Launching Bookstore06Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 15:55:00,238 [Worker-80: Launching Bookstore06Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 15:55:00,248 [Worker-80: Launching Bookstore06Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:02:10,615 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:02:10,621 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:02:10,630 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:02:39,353 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:02:39,359 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:02:39,369 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:03:08,449 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:03:08,455 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:03:08,464 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:04:46,960 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:04:46,966 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:04:46,976 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:06:17,057 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:06:17,063 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:06:17,072 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:08:59,632 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:08:59,637 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:08:59,646 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:15:10,735 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:15:10,745 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:15:10,755 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 16:16:48,931 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 16:16:48,948 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 16:16:48,958 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:00:19,070 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:00:19,098 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:00:19,107 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:14:19,958 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:14:19,964 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:14:19,973 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:15:05,489 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:15:05,498 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:15:05,507 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:17:19,370 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:17:19,376 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:17:19,386 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:22:28,129 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:22:28,134 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:22:28,144 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:44:08,443 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:44:08,448 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:44:08,459 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:49:31,508 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:49:31,519 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 17:49:31,529 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 17:54:21,403 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 17:54:21,404 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 17:54:21,407 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 18:01:43,700 [Worker-95: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 18:01:43,706 [Worker-95: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 18:01:43,716 [Worker-95: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 18:08:17,798 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 18:08:17,798 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 18:08:17,801 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 18:14:40,061 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 18:14:40,070 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources
+2023-10-18 18:14:40,080 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 18:18:00,551 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 18:18:00,551 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-10-18 18:18:00,554 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\nlilj\eclipse-workspace-backend\bookstore06\src\test\resources
+2023-10-18 19:17:27,932 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-10-18 19:17:27,932 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource

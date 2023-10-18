@@ -1,4 +1,4 @@
-#luotu 17102023
+#luotu 18102023
 
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -37,7 +37,8 @@ INSERT INTO book (title, author, isbn, publication_year, price, categoryid)
 VALUES ("Koodaajan käsikirja", "Hilda Koodinkirjoittaja", "132-312-123", 2000, 19.90, 2), 
 ("Tämän haluat tietää pilvipalveluiden käyttöönotosta", "Pekka Palvelin", "401-404-403-201", 2010, 46.90, 4),
 ("SQL-perusteet", "Teppo Tietokanta", "10-20-30-40", 2012, 34.90, 3),
-("Python3", "Douglas Django, Ethan Enum", "123-456-789-10", 2020, 54.90, 2);
+("Python3", "Douglas Django, Ethan Enum", "123-456-789-10", 2020, 54.90, 2),
+("Sulautetut järjestelmät", "Heikki Hiippari", "123-456-789-10", 2020, 54.90, 1);
 
 
 
