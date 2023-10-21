@@ -32,12 +32,23 @@ public class BookController {
 	//Kaikki kirjat	
 	@RequestMapping(value = {"/booklist"}) //endpoint:  http://localhost:8080/booklist
 	public String bookList(Model model) {
-		
+		System.out.println("NÄYTETÄÄN KAIKKI KIRJAT");
 		model.addAttribute("books", repository.findAll());
 		
 		return "booklist.html";	
 	}
 	
+	/* Kesken
+	//Näytä yksi kirja
+	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus 
+	@RequestMapping(value="/booklist/{id}", method=RequestMethod.GET)
+	public String showOneBook(@PathVariable("id") Long bookId, Model model) {
+		//repository.findById(bookId);
+		model.addAttribute("book", repository.findById(bookId)); //bookID
+		model.addAttribute("categories", crepository.findAll());
+		System.out.println("NÄYTETÄÄN YKSI KIRJA, id: " + bookId);
+		return "showbookdetails"; 
+	} */
 
 	//Lisätään kirja
 	@PreAuthorize("hasAuthority('ADMIN')") //metoditason tarkistus onko oikeus lisätä
