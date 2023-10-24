@@ -53,7 +53,8 @@
 <!-- 24102023 Näkyy vain kyseisen kirjan kirjan lisääjälle, jonka rooli on admin: -->	
 <!-- Muista myös BookControllerin muutokset jos muutat tätä -->		
 			<td th:if="${book.applicationuser.username == applicationuser.username}" sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/editBook/{id}(id=${book.id})}" class="btn btn-xs btn-success btn-sm">Edit</a></td>
-			<td th:if="${book.applicationuser.username == applicationuser.username}" sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-xs btn-danger btn-sm">Delete</a></td>		
+			<td th:if="${book.applicationuser.username == applicationuser.username}" sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-xs btn-danger btn-sm">Delete</a></td>	
+						
 	</tr>				
 	</table>
 	<br></br>
