@@ -40,9 +40,10 @@ public class BookController {
 	
 	//Kaikki kirjat	
 	@RequestMapping(value = {"/booklist"}) //endpoint:  http://localhost:8080/booklist
-	public String bookList(Model model) {
+	public String bookList(Model model, @AuthenticationPrincipal UserDetails userDetails) {
 		System.out.println("NÄYTETÄÄN KAIKKI KIRJAT");
 		model.addAttribute("books", repository.findAll());
+		
 		
 		return "booklist.html";	
 	}
@@ -107,7 +108,7 @@ public class BookController {
 		System.out.println(repository.findById(id));
 		model.addAttribute("book", repository.findById(id)); //bookID
 		model.addAttribute("categories", crepository.findAll());
-		model.addAttribute("applicationusers", appurepository.findAll()); //päivitetty 22102023, käytetään editBook.html:ssä
+		//model.addAttribute("applicationusers", appurepository.findAll()); //päivitetty 22102023, tämä tarvitaan jos käyttäjät listataan editBook.html:ssä
 		return "editBook";
 	}
 /*
