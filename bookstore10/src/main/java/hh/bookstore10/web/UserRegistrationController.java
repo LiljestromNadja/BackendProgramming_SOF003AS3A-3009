@@ -38,6 +38,7 @@ public class UserRegistrationController {
 	
 	//tallenna käyttäjä
 	@PostMapping("/admin/saveuser")
+	//@PostMapping(value= {"/admin/saveuser", "/admin/saveEditedUser"}) 
 	public String saveUser(@Valid @ModelAttribute("newuser") UserRegistration newUser, BindingResult bindingResult) {
 
 		log.info("saveuser: newUser is " + newUser.toString());

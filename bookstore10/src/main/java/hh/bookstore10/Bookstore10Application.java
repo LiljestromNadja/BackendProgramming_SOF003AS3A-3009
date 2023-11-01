@@ -25,6 +25,14 @@ public class Bookstore10Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Bookstore10Application.class, args);
 		
+		System.out.println("");
+		System.out.println("Jos tekemisen puutetta ilmenee: ");
+		System.out.println("-käyttäjän muokkaaminen");
+		System.out.println("-kirjat kategorioittain");
+		
+		System.out.println("-Jonkinlainen aakkostus, käyttäjän mukaan lajittelu tms. ");
+		System.out.println("");
+		
 		
 
 		LocalDateTime ldt = LocalDateTime.now();
@@ -33,6 +41,9 @@ public class Bookstore10Application {
 		System.out.println("Käytössä MariaDb");
 
 		System.out.println(ldt);
+		
+
+	
 	}
 	
 	

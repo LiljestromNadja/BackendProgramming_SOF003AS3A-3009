@@ -24,6 +24,7 @@ public class CategoryController {
 
 	@GetMapping("/categories")
 	public String getCategories(Model model) {
+		System.out.println("LISTATAAN KAIKKI KATEGORIAT:");
 		model.addAttribute("categories", crepository.findAll());
 		return "categories";
 	}

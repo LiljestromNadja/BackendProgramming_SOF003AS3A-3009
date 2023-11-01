@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Comments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"
+	th:href="@{css/bootstrap.min.css}" />
+<!-- Lisättiin tyyli, bootstrap 4.0 -->
+</head>
+<body>
+	<div>
+		<a href="/index"><button class="text-left btn btn-light btn-sm">Back to index.html</button></a> 
+				
+				
+		<a href="/booklist"><button class="text-left btn btn-light btn-sm">All Books</button></a>
+	</div>
+
+	<div class="text-right">
+		<i>You have signed in with username: <b sec:authentication="name"></b>,
+			and your role is: <b sec:authentication="principal.authorities"></b></i>
+
+		</br>
+		<form class="text-right" th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign Out" class="btn btn-sm btn-dark" />
+		</form>
+
+	</div>
+	<h3>Comments</h3>
+	<table>
+		<tr>
+			<th>Comment message</th> <!-- th == tableHeader -->
+			<th>User</th>
+			<th>Book id</th>
+			<th>book title</th>
+			</br>
+		</tr>
+		<tr th:each="comment : ${comments}">
+			<td th:text="${comment.commentmessage}"></td>
+			<td th:text="${comment?.applicationuser?.id}"></td>
+			<td th:text="${comment?.book?.id}"></td>
+			<td th:text="${comment?.book?.title}"></td>
+			
+			
+		</tr>
+	</table>
+	<br></br>
+	<a sec:authorize="hasAuthority('ADMIN') or hasAuthority('USER')" href="/addComment"><button
+			class="btn btn-success">Add new Comment</button></a> 
+	<br></br>
+
+
+
+</body>
+</html>
