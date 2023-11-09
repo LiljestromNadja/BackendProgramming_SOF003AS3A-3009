@@ -1,5 +1,6 @@
 package hh.bookstore12;
 
+
 import java.time.LocalDateTime;
 /*
 import org.slf4j.Logger;
@@ -33,14 +34,41 @@ public class Bookstore12Application {
 		System.out.println("-Jonkinlainen aakkostus, käyttäjän mukaan lajittelu tms. ");
 		System.out.println("");
 		
-		
+		System.out.println("Versio 12");
+		System.out.println("- tietokannan polku vaihdettu bookstoredb -> bookstorecommentsdb (application.properties)");
 
 		LocalDateTime ldt = LocalDateTime.now();
+		
+		
+		String min = "" + LocalDateTime.now().getMinute();
+		int m = LocalDateTime.now().getMinute();
+		if (m < 10) {
+			min = "0"+LocalDateTime.now().getMinute();
+		}
+		
+		String hour = "" + LocalDateTime.now().getHour();
+		int h = LocalDateTime.now().getHour();
+		if (h<10) {
+			hour = "0" + LocalDateTime.now();
+		}
+		
+		
+		String sRightnow =  hour + ":" + min;
+		
+		
+		
+		
+		
 
 		System.out.println("Bookstore running!");
 		System.out.println("Käytössä MariaDb");
 
 		System.out.println(ldt);
+		
+		System.out.println(sRightnow);
+	
+		
+		
 		
 
 	

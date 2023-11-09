@@ -33,6 +33,9 @@ public class Bookstore11Application {
 		System.out.println("-Jonkinlainen aakkostus, käyttäjän mukaan lajittelu tms. ");
 		System.out.println("");
 		
+		System.out.println("v11");
+		System.out.println("- tietokannan polku vaihdettu bookstoredb -> bookstorecommentsdb (application.properties)");
+		
 		
 
 		LocalDateTime ldt = LocalDateTime.now();

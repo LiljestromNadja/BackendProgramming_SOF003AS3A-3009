@@ -37,6 +37,8 @@ public class Bookstore13Application {
 
 		LocalDateTime ldt = LocalDateTime.now();
 
+		System.out.println("v13 - 30-10-2023 - lisätty kommenttien lisääminen ja poistaminen");
+		System.out.println("- tietokannan polku vaihdettu bookstoredb -> bookstorecommentsdb (application.properties)");
 		System.out.println("Bookstore running!");
 		System.out.println("Käytössä MariaDb");
 
